@@ -104,7 +104,7 @@ Then the auxiliary graph $\Gamma(G, H, \alpha)$ has vertex set $V(G) \cupdot V(H
  edge set $E(G) \cupdot E(H) \cupdot E(\alpha)$ where $E(\alpha) := \{x \alpha(x)|x \in V (G)\}$,
  vertex labels $(a_G(x), 1)$ for $x \in V(G)$ and $(a_H(x), 2)$ for $x \in V(H)$ and edge labels
  $b(e) = b_G(e)$ if $e \in E(G)$, $b(e) = b_H(e)$ if $e \in E(H)$, and $b(e) =$ * with *
-distinct from the vertex labels in $G$ and $H$, if $e \in E(\alpha)$.\\
+distinct from the edge labels in $G$ and $H$, if $e \in E(\alpha)$.\\
 
 \textbf{Definition:} Let $\alpha$ : $V(G) \rightarrow V(H)$ be an an atom map. Then $\Upsilon(G, H, \alpha)$
 is the \textbf{imaginary transition state graph} with vertex set $V(G)$, vertex labels $a_\Upsilon (x) = a_G (x)$ for all
@@ -113,9 +113,9 @@ and tuple edge labels
 
 $$
 b(xy) := \begin{cases}
-(b (xy), b_H(\alpha(x)\alpha(y))) & if xy \in E(G) and \alpha(x)\alpha(y) \in E(H) \\
-(b_G(xy), \* ) & if xy \in E(G) and \alpha(x)\alpha(y) \notin E(H) \\
-(\* , b_H(\alpha(x)\alpha(y)))  & if xy \notin E(G) and \alpha(x)\alpha(y) \in E(H)
+(b (xy), b_H(\alpha(x)\alpha(y))) & if xy \in E(G) \text{ and }\alpha(x)\alpha(y) \in E(H) \\
+(b_G(xy), \text{ * } ) & if xy \in E(G) \text{ and } \alpha(x)\alpha(y) \notin E(H) \\
+(\text{ * } , b_H(\alpha(x)\alpha(y)))  & if xy \notin E(G) \text{ and } \alpha(x)\alpha(y) \in E(H)
 \end{cases}
 $$
 
